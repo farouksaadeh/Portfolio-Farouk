@@ -60,7 +60,7 @@ export default function Portfolio() {
     })
   }
 
-  // If site is under development, show the development screen
+  // If site is under development, show the development screen.
   if (SITE_UNDER_DEVELOPMENT) {
     return <UnderDevelopmentScreen />
   }
