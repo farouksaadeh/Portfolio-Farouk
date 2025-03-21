@@ -16,14 +16,12 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-
-  // Kommentiere den experimental-Block aus:
-  // experimental: {
-    // webpackBuildWorker: true,
-    // parallelServerBuildTraces: true,
-    // parallelServerCompiles: true,
-  //},
-};
+  experimental: {
+    webpackBuildWorker: true,
+    parallelServerBuildTraces: true,
+    parallelServerCompiles: true,
+  },
+}
 
 mergeConfig(nextConfig, userConfig)
 
