@@ -24,7 +24,7 @@ import {
 } from "lucide-react"
 
 // Set to false when you want to go live
-const SITE_UNDER_DEVELOPMENT = true
+const SITE_UNDER_DEVELOPMENT = false
 
 export default function Portfolio() {
   const { scrollYProgress } = useScroll()
@@ -69,7 +69,10 @@ export default function Portfolio() {
     <div className="min-h-screen bg-background">
       {/* Progress Bar */}
       <div className="fixed top-0 left-0 right-0 h-1 z-50 bg-background/20">
-        <div ref={progressRef} className="h-full bg-gradient-to-r from-cyan to-deep-blue" />
+        <div
+          ref={progressRef}
+          className="h-full bg-gradient-to-r from-cyan to-deep-blue"
+        />
       </div>
 
       {/* Navigation */}
@@ -82,7 +85,7 @@ export default function Portfolio() {
             className="font-bold text-xl"
           >
             <Link href="/" className="text-gradient">
-              DevPortfolio
+              FarSaa
             </Link>
           </motion.div>
           <nav className="hidden md:flex gap-6">
@@ -115,7 +118,11 @@ export default function Portfolio() {
               asChild
               className="hover:bg-cyan/10 hover:border-cyan/50 transition-colors duration-300"
             >
-              <Link href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <Link
+                href="https://github.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Github className="h-4 w-4" />
                 <span className="sr-only">GitHub</span>
               </Link>
@@ -126,7 +133,11 @@ export default function Portfolio() {
               asChild
               className="hover:bg-cyan/10 hover:border-cyan/50 transition-colors duration-300"
             >
-              <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <Link
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Linkedin className="h-4 w-4" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
@@ -158,10 +169,11 @@ export default function Portfolio() {
                   Available for hire
                 </Badge>
                 <h1 className="text-4xl md:text-6xl font-bold">
-                  Hi, I'm <span className="text-gradient">John Doe</span>
+                  Hi, I'm <span className="text-gradient">Farouk Saadeh</span>
                 </h1>
                 <p className="text-xl md:text-2xl text-muted-foreground">
-                  Full Stack Developer specializing in building exceptional digital experiences
+                  Full Stack Developer specializing in building exceptional
+                  digital experiences
                 </p>
                 <div className="flex gap-4">
                   <Button
@@ -205,22 +217,27 @@ export default function Portfolio() {
         {/* About Section */}
         <SectionWrapper id="about" className="bg-muted py-16 md:py-24">
           <div className="container space-y-12">
-            <SectionHeader icon={<User className="h-6 w-6 text-cyan" />} title="About Me" />
+            <SectionHeader
+              icon={<User className="h-6 w-6 text-cyan" />}
+              title="About Me"
+            />
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <motion.div variants={fadeInVariants} className="space-y-4">
                 <p className="text-lg">
-                  I'm a passionate full-stack developer with a strong foundation in modern web technologies. With over 5
-                  years of experience, I've worked on a variety of projects from small business websites to complex
-                  enterprise applications.
+                  I'm a passionate full-stack developer with a strong foundation
+                  in modern web technologies. With over 5 years of experience,
+                  I've worked on a variety of projects from small business
+                  websites to complex enterprise applications.
                 </p>
                 <p className="text-lg">
-                  My approach to development focuses on creating clean, efficient, and maintainable code that delivers
-                  exceptional user experiences. I'm constantly learning and exploring new technologies to stay at the
-                  forefront of web development.
+                  My approach to development focuses on creating clean,
+                  efficient, and maintainable code that delivers exceptional
+                  user experiences. I'm constantly learning and exploring new
+                  technologies to stay at the forefront of web development.
                 </p>
                 <p className="text-lg">
-                  When I'm not coding, you can find me hiking, reading tech blogs, or contributing to open-source
-                  projects.
+                  When I'm not coding, you can find me hiking, reading tech
+                  blogs, or contributing to open-source projects.
                 </p>
               </motion.div>
               <motion.div variants={fadeInVariants} className="space-y-4">
@@ -230,14 +247,20 @@ export default function Portfolio() {
                     variants={listItemVariants}
                     className="border-l-2 border-cyan pl-4 py-2 hover:border-l-4 transition-all duration-300"
                   >
-                    <h4 className="font-medium">Bachelor of Science in Computer Science</h4>
-                    <p className="text-muted-foreground">University of Technology, 2015-2019</p>
+                    <h4 className="font-medium">
+                      Bachelor of Science in Computer Science
+                    </h4>
+                    <p className="text-muted-foreground">
+                      University of Technology, 2015-2019
+                    </p>
                   </motion.div>
                   <motion.div
                     variants={listItemVariants}
                     className="border-l-2 border-cyan pl-4 py-2 hover:border-l-4 transition-all duration-300"
                   >
-                    <h4 className="font-medium">Full Stack Web Development Bootcamp</h4>
+                    <h4 className="font-medium">
+                      Full Stack Web Development Bootcamp
+                    </h4>
                     <p className="text-muted-foreground">Code Academy, 2020</p>
                   </motion.div>
                 </div>
@@ -248,14 +271,18 @@ export default function Portfolio() {
                     className="border-l-2 border-cyan pl-4 py-2 hover:border-l-4 transition-all duration-300"
                   >
                     <h4 className="font-medium">Senior Developer</h4>
-                    <p className="text-muted-foreground">Tech Solutions Inc., 2021-Present</p>
+                    <p className="text-muted-foreground">
+                      Tech Solutions Inc., 2021-Present
+                    </p>
                   </motion.div>
                   <motion.div
                     variants={listItemVariants}
                     className="border-l-2 border-cyan pl-4 py-2 hover:border-l-4 transition-all duration-300"
                   >
                     <h4 className="font-medium">Web Developer</h4>
-                    <p className="text-muted-foreground">Digital Creations, 2019-2021</p>
+                    <p className="text-muted-foreground">
+                      Digital Creations, 2019-2021
+                    </p>
                   </motion.div>
                 </div>
               </motion.div>
@@ -264,42 +291,76 @@ export default function Portfolio() {
         </SectionWrapper>
 
         {/* Skills Section */}
-        <SectionWrapper id="skills" className="py-16 md:py-24 relative overflow-hidden">
+        <SectionWrapper
+          id="skills"
+          className="py-16 md:py-24 relative overflow-hidden"
+        >
           <div className="absolute inset-0 z-0">
             <div className="absolute top-0 right-0 w-96 h-96 bg-cyan/10 rounded-full blur-3xl" />
             <div className="absolute bottom-0 left-0 w-96 h-96 bg-deep-blue/10 rounded-full blur-3xl" />
           </div>
           <div className="container space-y-12 relative z-10">
-            <SectionHeader icon={<Code className="h-6 w-6 text-cyan" />} title="Skills & Technologies" />
+            <SectionHeader
+              icon={<Code className="h-6 w-6 text-cyan" />}
+              title="Skills & Technologies"
+            />
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               <SkillCard
                 title="Frontend"
-                skills={["React", "Next.js", "TypeScript", "Tailwind CSS", "HTML/CSS"]}
+                skills={[
+                  "React",
+                  "Next.js",
+                  "TypeScript",
+                  "Tailwind CSS",
+                  "HTML/CSS",
+                ]}
                 delay={0}
               />
               <SkillCard
                 title="Backend"
-                skills={["Node.js", "Express", "Python", "Django", "RESTful APIs"]}
+                skills={[
+                  "Node.js",
+                  "Express",
+                  "Python",
+                  "Django",
+                  "RESTful APIs",
+                ]}
                 delay={0.1}
               />
               <SkillCard
                 title="Database"
-                skills={["MongoDB", "PostgreSQL", "MySQL", "Firebase", "Prisma"]}
+                skills={[
+                  "MongoDB",
+                  "PostgreSQL",
+                  "MySQL",
+                  "Firebase",
+                  "Prisma",
+                ]}
                 delay={0.2}
               />
-              <SkillCard title="DevOps & Tools" skills={["Git", "Docker", "AWS", "CI/CD", "Vercel"]} delay={0.3} />
+              <SkillCard
+                title="DevOps & Tools"
+                skills={["Git", "Docker", "AWS", "CI/CD", "Vercel"]}
+                delay={0.3}
+              />
             </div>
           </div>
         </SectionWrapper>
 
         {/* Projects Section */}
-        <SectionWrapper id="projects" className="bg-muted py-16 md:py-24 relative overflow-hidden">
+        <SectionWrapper
+          id="projects"
+          className="bg-muted py-16 md:py-24 relative overflow-hidden"
+        >
           <div className="absolute inset-0 z-0">
             <div className="absolute top-0 left-0 w-96 h-96 bg-cyan/10 rounded-full blur-3xl" />
             <div className="absolute bottom-0 right-0 w-96 h-96 bg-deep-blue/10 rounded-full blur-3xl" />
           </div>
           <div className="container space-y-12 relative z-10">
-            <SectionHeader icon={<Briefcase className="h-6 w-6 text-cyan" />} title="Featured Projects" />
+            <SectionHeader
+              icon={<Briefcase className="h-6 w-6 text-cyan" />}
+              title="Featured Projects"
+            />
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <ProjectCard
                 title="E-Commerce Platform"
@@ -356,14 +417,21 @@ export default function Portfolio() {
                 delay={0.5}
               />
             </div>
-            <motion.div variants={fadeInVariants} className="flex justify-center">
+            <motion.div
+              variants={fadeInVariants}
+              className="flex justify-center"
+            >
               <Button
                 variant="outline"
                 size="lg"
                 asChild
                 className="border-cyan/20 hover:border-cyan/50 hover:bg-cyan/5 transition-all duration-300 hover:shadow-lg hover:shadow-cyan/10"
               >
-                <Link href="https://github.com" target="_blank" rel="noopener noreferrer">
+                <Link
+                  href="https://github.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   View More on GitHub <ExternalLink className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
@@ -372,53 +440,63 @@ export default function Portfolio() {
         </SectionWrapper>
 
         {/* Contact Section */}
-        <SectionWrapper id="contact" className="py-16 md:py-24 relative overflow-hidden">
+        <SectionWrapper
+          id="contact"
+          className="py-16 md:py-24 relative overflow-hidden"
+        >
           <div className="absolute inset-0 z-0">
             <div className="absolute top-0 right-0 w-96 h-96 bg-cyan/10 rounded-full blur-3xl" />
             <div className="absolute bottom-0 left-0 w-96 h-96 bg-deep-blue/10 rounded-full blur-3xl" />
           </div>
           <div className="container space-y-12 relative z-10">
-            <SectionHeader icon={<MessageSquare className="h-6 w-6 text-cyan" />} title="Get In Touch" />
+            <SectionHeader
+              icon={<MessageSquare className="h-6 w-6 text-cyan" />}
+              title="Get In Touch"
+            />
             <div className="grid md:grid-cols-2 gap-8">
               <motion.div variants={fadeInVariants} className="space-y-4">
                 <p className="text-lg">
-                  I'm currently available for freelance work and full-time positions. If you have a project that needs
-                  some creative touch or if you're looking to hire a developer, feel free to reach out!
+                  I'm currently available for freelance work and full-time
+                  positions. If you have a project that needs some creative
+                  touch or if you're looking to hire a developer, feel free to
+                  reach out!
                 </p>
                 <div className="space-y-2">
-                  <motion.div variants={listItemVariants} className="flex items-center gap-2 group">
+                  <motion.div
+                    variants={listItemVariants}
+                    className="flex items-center gap-2 group"
+                  >
                     <div className="p-2 rounded-full bg-cyan/10 group-hover:bg-cyan/20 transition-colors duration-300">
                       <Mail className="h-5 w-5 text-cyan" />
                     </div>
-                    <a href="mailto:hello@example.com" className="hover:text-cyan transition-colors">
-                      hello@example.com
+                    <a
+                      href="mailto:saadeh.farouk@outlook.com"
+                      className="hover:text-cyan transition-colors"
+                    >
+                      saadeh.faroukoutlook.com
                     </a>
                   </motion.div>
-                  <motion.div variants={listItemVariants} className="flex items-center gap-2 group">
+                  <motion.div
+                    variants={listItemVariants}
+                    className="flex items-center gap-2 group"
+                  >
                     <div className="p-2 rounded-full bg-cyan/10 group-hover:bg-cyan/20 transition-colors duration-300">
                       <Linkedin className="h-5 w-5 text-cyan" />
                     </div>
                     <a
-                      href="https://linkedin.com"
+                      href="https://www.linkedin.com/in/farouk-saadeh-336a70288/?originalSubdomain=ch"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-cyan transition-colors"
                     >
-                      linkedin.com/in/johndoe
+                      linkedin.com/in/farouksaadeh/
                     </a>
                   </motion.div>
-                  <motion.div variants={listItemVariants} className="flex items-center gap-2 group">
-                    <div className="p-2 rounded-full bg-cyan/10 group-hover:bg-cyan/20 transition-colors duration-300">
-                      <Twitter className="h-5 w-5 text-cyan" />
-                    </div>
-                    <a
-                      href="https://twitter.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:text-cyan transition-colors"
-                    >
-                      @johndoe
-                    </a>
+                  <motion.div
+                    variants={listItemVariants}
+                    className="flex items-center gap-2 group"
+                  >
+                    
                   </motion.div>
                 </div>
               </motion.div>
@@ -435,7 +513,7 @@ export default function Portfolio() {
                       <input
                         id="name"
                         className="flex h-10 w-full rounded-md border border-input bg-background/50 px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 transition-all duration-300"
-                        placeholder="John Doe"
+                        placeholder="Farouk Saadeh"
                       />
                     </div>
                     <div className="space-y-2">
@@ -493,7 +571,9 @@ export default function Portfolio() {
             viewport={{ once: true }}
             className="text-center md:text-left"
           >
-            <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} John Doe. All rights reserved.</p>
+            <p className="text-sm text-muted-foreground">
+              © {new Date().getFullYear()} Farouk Saadeh. All rights reserved.
+            </p>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 10 }}
@@ -503,19 +583,38 @@ export default function Portfolio() {
             className="flex gap-4"
           >
             {[
-              { icon: <Github className="h-5 w-5" />, label: "GitHub", href: "https://github.com" },
-              { icon: <Linkedin className="h-5 w-5" />, label: "LinkedIn", href: "https://linkedin.com" },
-              { icon: <Twitter className="h-5 w-5" />, label: "Twitter", href: "https://twitter.com" },
-              { icon: <Mail className="h-5 w-5" />, label: "Email", href: "mailto:hello@example.com" },
+              {
+                icon: <Github className="h-5 w-5" />,
+                label: "GitHub",
+                href: "https://github.com/farouksaadeh",
+              },
+              {
+                icon: <Linkedin className="h-5 w-5" />,
+                label: "LinkedIn",
+                href: "https://www.linkedin.com/in/farouk-saadeh-336a70288/?originalSubdomain=ch",
+              },
+              {
+                icon: <Mail className="h-5 w-5" />,
+                label: "Email",
+                href: "mailto:saadeh.farouk@outlook.com",
+              },
             ].map((item, i) => (
-              <motion.div key={item.label} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+              <motion.div
+                key={item.label}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+              >
                 <Button
                   variant="ghost"
                   size="icon"
                   asChild
                   className="hover:bg-cyan/10 hover:text-cyan transition-colors duration-300"
                 >
-                  <Link href={item.href} target="_blank" rel="noopener noreferrer">
+                  <Link
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     {item.icon}
                     <span className="sr-only">{item.label}</span>
                   </Link>
@@ -549,7 +648,7 @@ export default function Portfolio() {
         )}
       </AnimatePresence>
     </div>
-  )
+  );
 }
 
 // Animation variants
@@ -725,27 +824,18 @@ function UnderDevelopmentScreen() {
           className="space-y-6"
         >
           <p className="text-xl text-muted-foreground">
-            Our portfolio website is currently under construction. We're working hard to bring you an amazing
-            experience.
+            Our portfolio website is currently under construction. We're working
+            hard to bring you an amazing experience.
           </p>
 
           <div className="bg-background/50 backdrop-blur-sm rounded-lg p-8 border border-cyan/10 shadow-xl shadow-cyan/5">
-            <h2 className="text-2xl font-semibold mb-4 text-gradient">Coming Soon</h2>
-            <p className="mb-6">We're putting the finishing touches on our new website. Stay tuned for our launch!</p>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-gradient hover:shadow-lg hover:shadow-cyan/20 transition-all duration-300">
-                <Mail className="mr-2 h-4 w-4" /> Contact Me
-              </Button>
-              <Button
-                variant="outline"
-                className="border-cyan/20 hover:border-cyan/50 hover:bg-cyan/5 transition-all duration-300"
-              >
-                <Link href="https://github.com" target="_blank" rel="noopener noreferrer" className="flex items-center">
-                  <Github className="mr-2 h-4 w-4" /> Follow Progress
-                </Link>
-              </Button>
-            </div>
+            <h2 className="text-2xl font-semibold mb-4 text-gradient">
+              Coming Soon
+            </h2>
+            <p className="mb-6">
+              We're putting the finishing touches on our new website. Stay tuned
+              for our launch!
+            </p>
           </div>
         </motion.div>
 
@@ -755,22 +845,43 @@ function UnderDevelopmentScreen() {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="mt-12"
         >
-          <p className="text-sm text-muted-foreground mb-4">Connect with me on social media</p>
+          <p className="text-sm text-muted-foreground mb-4">
+            Connect with me on social media
+          </p>
           <div className="flex justify-center gap-4">
             {[
-              { icon: <Github className="h-5 w-5" />, label: "GitHub", href: "https://github.com" },
-              { icon: <Linkedin className="h-5 w-5" />, label: "LinkedIn", href: "https://linkedin.com" },
-              { icon: <Twitter className="h-5 w-5" />, label: "Twitter", href: "https://twitter.com" },
-              { icon: <Mail className="h-5 w-5" />, label: "Email", href: "mailto:hello@example.com" },
+              {
+                icon: <Github className="h-5 w-5" />,
+                label: "GitHub",
+                href: "https://github.com/farouksaadeh",
+              },
+              {
+                icon: <Linkedin className="h-5 w-5" />,
+                label: "LinkedIn",
+                href: "https://www.linkedin.com/in/farouk-saadeh-336a70288/?originalSubdomain=ch",
+              },
+              {
+                icon: <Mail className="h-5 w-5" />,
+                label: "Email",
+                href: "mailto:saadeh.farouk@outlook.com",
+              },
             ].map((item) => (
-              <motion.div key={item.label} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+              <motion.div
+                key={item.label}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+              >
                 <Button
                   variant="ghost"
                   size="icon"
                   asChild
                   className="hover:bg-cyan/10 hover:text-cyan transition-colors duration-300"
                 >
-                  <Link href={item.href} target="_blank" rel="noopener noreferrer">
+                  <Link
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     {item.icon}
                     <span className="sr-only">{item.label}</span>
                   </Link>
@@ -781,6 +892,6 @@ function UnderDevelopmentScreen() {
         </motion.div>
       </div>
     </div>
-  )
+  );
 }
 
