@@ -24,6 +24,7 @@ import {
 } from "lucide-react"
 
 // Set to false when you want to go live
+
 const SITE_UNDER_DEVELOPMENT = true
 
 export default function Portfolio() {
