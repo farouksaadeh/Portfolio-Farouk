@@ -24,7 +24,7 @@ import {
 } from "lucide-react"
 
 // Set to false when you want to go live
-const SITE_UNDER_DEVELOPMENT = false
+const SITE_UNDER_DEVELOPMENT = true
 
 export default function Portfolio() {
   const { scrollYProgress } = useScroll()
@@ -484,7 +484,7 @@ export default function Portfolio() {
                       <Linkedin className="h-5 w-5 text-cyan" />
                     </div>
                     <a
-                      href="https://www.linkedin.com/in/farouk-saadeh-336a70288/?originalSubdomain=ch"
+                      href="https://www.linkedin.com/in/farouksaadeh"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-cyan transition-colors"
@@ -591,7 +591,7 @@ export default function Portfolio() {
               {
                 icon: <Linkedin className="h-5 w-5" />,
                 label: "LinkedIn",
-                href: "https://www.linkedin.com/in/farouk-saadeh-336a70288/?originalSubdomain=ch",
+                href: "https://www.linkedin.com/in/farouksaadeh",
               },
               {
                 icon: <Mail className="h-5 w-5" />,
@@ -858,7 +858,7 @@ function UnderDevelopmentScreen() {
               {
                 icon: <Linkedin className="h-5 w-5" />,
                 label: "LinkedIn",
-                href: "https://www.linkedin.com/in/farouk-saadeh-336a70288/?originalSubdomain=ch",
+                href: "https://www.linkedin.com/in/farouksaadeh",
               },
               {
                 icon: <Mail className="h-5 w-5" />,
