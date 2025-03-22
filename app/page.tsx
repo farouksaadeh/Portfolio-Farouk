@@ -23,9 +23,8 @@ import {
   ArrowUp,
 } from "lucide-react"
 
-// Set to false when you want to go live
-
-const SITE_UNDER_DEVELOPMENT = true
+// Check if the site is under development
+const isMaintenance = process.env.NEXT_PUBLIC_MAINTENANCE_MODE === "true";
 
 export default function Portfolio() {
   const { scrollYProgress } = useScroll()
@@ -62,8 +61,8 @@ export default function Portfolio() {
   }
 
   // If site is under development, show the development screen.
-  if (SITE_UNDER_DEVELOPMENT) {
-    return <UnderDevelopmentScreen />
+  if (isMaintenance) {
+    return <UnderDevelopmentScreen />;
   }
 
   return (
