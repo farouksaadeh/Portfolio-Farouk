@@ -25,7 +25,7 @@ import {
 
 // Set to false when you want to go live
 
-const SITE_UNDER_DEVELOPMENT = false
+const SITE_UNDER_DEVELOPMENT = true
 
 export default function Portfolio() {
   const { scrollYProgress } = useScroll()
